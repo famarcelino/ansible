@@ -1,0 +1,11 @@
+- name: adicionando o usuario devops
+  user:
+   name: "{{item.name}}"
+   state: present
+   shell: '/bin/bash'
+   home: "{{item.home}}"
+   password: '$1$ZSmt6rjc$hr5HdAMCn6l5MnBGTgWPm/'
+  with_items:
+   - { name: devops, home: /srv/devops }
+   - { name: developer, home: /srv/developer }
+   - { name: francisco, home: /srv/francisco }

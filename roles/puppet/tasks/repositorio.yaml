@@ -1,0 +1,5 @@
+- name: repositorio Ubuntu
+  include: installubuntu.yaml
+
+- name: repositorio RedHat
+  include: installredhat.yaml

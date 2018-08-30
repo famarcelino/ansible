@@ -1,0 +1,6 @@
+- name: copiando o arquivo index.html para todas as maquinas
+  copy:
+   src: "{{item.src}}"
+   dest: "{{item.dest}}"
+  with_items:
+   - { src: files/index.html, dest: /var/www/html/index.html }

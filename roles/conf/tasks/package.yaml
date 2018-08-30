@@ -1,0 +1,14 @@
+- name: instalando pacotes principais
+  package:
+   name: 
+    - figlet
+    - vim
+    - joe
+    - sysstat
+    - htop
+    - cowsay
+    - php
+    - mariadb
+   state: present
+   update_cache: yes
+
